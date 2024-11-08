@@ -2,10 +2,6 @@
   "name": "with-docker",
   "version": "0.0.0",
   "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
   "scripts": {
     "build": "turbo run build",
     "clean": "turbo run clean",
