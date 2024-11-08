@@ -4,7 +4,13 @@ const project = resolve(process.cwd(), "tsconfig.json");
 
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-  extends: ["next/core-web-vitals", "next/typescript"],
+  extends: [
+    "plugin:import/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "turbo",
+  ],
+  plugins: ["import"],
   rules: {
     "@typescript-eslint/no-unused-vars": [
       "error",
